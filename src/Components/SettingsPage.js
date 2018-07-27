@@ -48,7 +48,7 @@ export class SettingsPage extends React.Component{
                     </div>
                     
                 </div>
-                <form onSubmit={this.handleSubmit}>
+                <form className="formadjust" onSubmit={this.handleSubmit}>
                 <fieldset className="form-group form-success">
                 <label>YOUR NAME : </label>
                 <input type="text" className="form-control" onChange={this.handleChange}/>
@@ -63,8 +63,8 @@ export class SettingsPage extends React.Component{
                     <div className="meker-info-content">
                         <h3>Mohit</h3>
                         <p>you can find him here -</p>
-                        <h6>Github - <a href="www.github.com/mohit0101">www.github.com/mohit0101</a></h6>
-                        <h6>instagram - <a href="www.instagram.com/frasm__">www.instagram.com/frasm__</a></h6>
+                        <h6>Github - <a href="https://www.github.com/mohit0101">www.github.com/mohit0101</a></h6>
+                        <h6>instagram - <a href="https://www.instagram.com/frasm__">www.instagram.com/frasm__</a></h6>
                     </div>
                 </div>
             

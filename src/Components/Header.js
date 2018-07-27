@@ -72,7 +72,7 @@ export class Header extends React.Component{
             <div className="grid header">
                         <div className="cell -3of12">
                             <div className="content">
-                            <span className="datetime" >DATE: {this.state.d} <br/> TIME : {this.state.timeRightNow}</span>
+                            <span className="datetime" ><span className="dull">DATE:</span> {this.state.d} <br/> <span className="dull">TIME:</span> {this.state.timeRightNow} </span>
                             </div>
                         </div>
                         <div className="salutation cell -8of12">

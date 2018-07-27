@@ -230,7 +230,7 @@ handleSelect(event){
       </fieldset>
         <fieldset className="form-group form-warning">
           <label>YOUR GOAL : </label>
-          <input type="text" id="aim" value={this.state.term} onChange={this.handleChange} className="form-control" />
+          <input type="text" id="aim" value={this.state.term} placeholder='type you aim here and press enter' onChange={this.handleChange} className="form-control" />
         </fieldset>
         <button className="btn btn-warning btn-ghost">I WILL DO THIS.</button>
           <span>{this.state.err}</span>

@@ -59,7 +59,7 @@ float: right;
     -moz-animation: myOrbit 12s linear infinite; 
     -o-animation: myOrbit 12s linear infinite;
     animation: myOrbit 12s linear infinite;  
-
+    cursor: pointer;
 }
 
 .content-title{
@@ -123,5 +123,19 @@ float: right;
 }
 .topbar span{
     margin-top: 7px;
-    margin-left: 15px;
+}
+
+.formadjust{
+    margin-left: 50px;
+}
+.maker-info{
+    float: right;
+    text-orientation: sideways;
+}
+.datetime{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.dull{
+    color: grey;
 }
