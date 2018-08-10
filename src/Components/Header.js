@@ -68,12 +68,8 @@ export class Header extends React.Component{
     
     render(){
         return(
+            
             <div className="header">
-                <div className="grid">
-                    <div className="cell -10of12">
-                        <h1>Search here</h1>
-                    </div>
-                </div>
                 <div className="grid">
                 <div className="cell -3of12">
                     <div className="content">
