@@ -46,12 +46,12 @@ componentDidMount(){
            {this.props.items.map((item, index) => {
               return(
                 <div key="{index}" className="grid myitems">
-                  <div className="cell 9of12">
+                  <div className="cell -9of12">
                     <div className="content-title">
                       <img src={require('./sort-right-green.png')} height="10px" width="10px" alt=""/>&nbsp;{item} &nbsp;
                     </div>
                   </div>
-                  <div className="cell 3of12">
+                  <div className="cell -3of12">
                     <div className="content">
                         <button onClick={() => this.removeThis(index)} className="btn-default btn-ghost">X</button>
                     </div>
