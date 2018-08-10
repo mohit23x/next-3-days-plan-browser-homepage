@@ -41,7 +41,7 @@ export class Header extends React.Component{
                 'timeRightNow': v
             });
             console.log(v);    
-        }, 5000)
+        }, 1000)
 
         var day = currentTime.getDate();
         var month = currentTime.getMonth();
@@ -68,24 +68,30 @@ export class Header extends React.Component{
     
     render(){
         return(
-            
-            <div className="grid header">
-                        <div className="cell -3of12">
-                            <div className="content">
-                            <span className="datetime" ><span className="dull">DATE:</span> {this.state.d} <br/> <span className="dull">TIME:</span> {this.state.timeRightNow} </span>
-                            </div>
-                        </div>
-                        <div className="salutation cell -8of12">
-                            <div className="content">
-                            <div className="name">
-                                <span> {this.props.nam} </span>
-                            </div>
-                            </div>
-                            </div>
-                        <div className="settings cell -1of12" onClick={this.handleClickOnSetting}>
-                            <img src={require('./setting-png.png')} alt="set"/>
-                        </div>
-                        </div>
+            <div className="header">
+                <div className="grid">
+                    <div className="cell -10of12">
+                        <h1>Search here</h1>
+                    </div>
+                </div>
+                <div className="grid">
+                <div className="cell -3of12">
+                    <div className="content">
+                    <span className="datetime" ><span className="dull">DATE:</span> {this.state.d} <br/> <span className="dull">TIME:</span> {this.state.timeRightNow} </span>
+                    </div>
+                </div>
+                <div className="salutation cell -8of12">
+                    <div className="content">
+                    <div className="name">
+                        <span> {this.props.nam} </span>
+                    </div>
+                    </div>
+                    </div>
+                <div className="settings cell -1of12" onClick={this.handleClickOnSetting}>
+                    <img src={require('./setting-png.png')} alt="set"/>
+                </div>
+                </div>
+            </div>
 
         )
     }
