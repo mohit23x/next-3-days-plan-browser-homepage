@@ -1,15 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "planner",
+  "name": "next 3 day  plan to be productive",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "logo192.ico",
+      "sizes": "192x192",
       "type": "image/x-icon"
+    },
+    {
+      "src": "logo512.png",
+      "sizes": "512x512",
+      "type": "images/png"
     }
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#056839",
+  "background_color": "#056839"
 }

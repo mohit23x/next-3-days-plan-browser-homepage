@@ -1,16 +1,19 @@
 import React from 'react';
-import Settings from '../settings.svg';
 
 export class Header extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             'timeRightNow': '',
-            'd': ''
+            'd': '',
+            'day': '',
+            'bahar': '',
+            'keyword': ''
         }
         this.handleClickOnSetting = this.handleClickOnSetting.bind(this);
+        this.handleSearch = this.handleSearch.bind(this);
     }
-    
+
     componentDidMount(){
         var currentTime = new Date();
 
@@ -36,11 +39,11 @@ export class Header extends React.Component{
             if(minutes < 10){
                 minutes = "0" + minutes;
             }
-            var v = hours + ":" + minutes + outside;
+            var v = hours + ":" + minutes ;
             this.setState({
-                'timeRightNow': v
-            });
-            console.log(v);    
+                'timeRightNow': v,
+                'bahar': outside
+            });    
         }, 1000)
 
         var day = currentTime.getDate();
@@ -55,37 +58,54 @@ export class Header extends React.Component{
         if(month < 10){
             month = '0' + month;
         }
-        var d = day + '-' + month +  '-' + year + '  ' + days[din];
+        var d = day + '-' + month +  '-' + year;
         this.setState({
-            'd': d
+            'd': d,
+            'day': ' ' + days[din]
         });
     }
 
     handleClickOnSetting(event){
         this.props.showSettingFunction('True');
     }
-    
+
+    handleSearch(e){
+        const f = e.target.value;
+        const g = f.replace(/ /g, "+");
+        var u = "https://www.google.co.in/search?q=" + g;
+        this.setState({
+            keyword: u
+        });
+    }
     
     render(){
         return(
-            
             <div className="header">
-                <div className="grid">
-                <div className="cell -3of12">
-                    <div className="content">
-                    <span className="datetime" ><span className="dull">DATE:</span> {this.state.d} <br/> <span className="dull">TIME:</span> {this.state.timeRightNow} </span>
+                <div className="cell datetime">
+                    <div className="date_line" >
+                        &nbsp;{this.state.d}<span className="dull2">{this.state.day}</span>
+                     </div>
+                    <div className="time_line">
+                        &nbsp;{this.state.timeRightNow} <span className="dull2">{this.state.bahar}</span>
                     </div>
                 </div>
-                <div className="salutation cell -8of12">
-                    <div className="content">
+                <div className="salutation cell">
                     <div className="name">
                         <span> {this.props.nam} </span>
                     </div>
-                    </div>
-                    </div>
-                <div className="settings cell -1of12" onClick={this.handleClickOnSetting}>
-                    <img src={require('./setting-png.png')} alt="set"/>
                 </div>
+                <div className="cell">
+                    <form onSubmit={()=> window.open(this.state.keyword, "_blank")}>
+                    <div className="search">
+                        <span><img src={require('./google50x50.png')} alt=""/></span>
+                        <input type="text" id="search" name="search" onChange={this.handleSearch} className="search_input" placeholder="search" />
+                    </div>
+                    </form>
+                </div>
+                <div className="cell settings">
+                    <div className="setting_img" onClick={this.handleClickOnSetting}>
+                        <img src={require('./setting-png.png')} alt="set"/>
+                    </div>
                 </div>
             </div>
 

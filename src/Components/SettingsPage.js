@@ -29,42 +29,37 @@ export class SettingsPage extends React.Component{
     
     render(){
         return(
-            <div>
-                <div>
-                    <div className="grid topbar">
-                        <button onClick={this.handleSettingClose} className="btn btn-success btn-ghost">X</button>
-                        <span>Close Settings</span>
-                    </div>
-                    <br/>
-                    <div className="setting-grid grid">
+            <div className="settings_container">
+                <div className="settings_topbar">
                     <div className="mainsettings cell" onClick={this.handleClickOnSetting}>
-                            <img src={require('./setting-png.png')} alt="set"/>
-
+                        <img src={require('./setting-png.png')} alt="set"/>
                     </div>
                     <div className="setting-title cell">
-                    <span>S E T T I N G S</span>
+                        <span>S E T T I N G S</span>
                     </div>
-                    <br/>
+                    <div className="topbar">
+                        <button onClick={this.handleSettingClose} className="btn btn-success btn-ghost">X</button>
                     </div>
-                    
                 </div>
                 <form className="formadjust" onSubmit={this.handleSubmit}>
-                <fieldset className="form-group form-success">
-                <label>YOUR NAME : </label>
-                <input type="text" className="form-control" onChange={this.handleChange}/>
-                </fieldset>
-                <button className="btn btn-success btn-ghost">that's my name!</button>
+                    <div className="form-group">
+                        <label>YOUR NAME : </label>
+                        <input type="text" placeholder={this.props.presentName} className="form-control" onChange={this.handleChange}/>
+                    </div>
+                    <div className="form-group">
+                    <button className="">that's my name!</button>
+                    </div>
                 </form>
                 <br/>
-                <div className="maker-info">
-                    <div className="maker-info-titl">
+                <div className="maker_info">
+                    <div className="maker_info_titl">
                         <h1> T H I S &nbsp; I S &nbsp; M A D E &nbsp; B Y </h1>
                     </div>
-                    <div className="meker-info-content">
+                    <div className="meker_info_content">
                         <h3>Mohit</h3>
                         <p>you can find him here -</p>
-                        <h6>Github - <a href="https://www.github.com/mohit0101">www.github.com/mohit0101</a></h6>
-                        <h6>instagram - <a href="https://www.instagram.com/frasm__">www.instagram.com/frasm__</a></h6>
+                        <h4>Github - <a href="https://www.github.com/mohit0101">www.github.com/mohit0101</a></h4>
+                        <h4>instagram - <a href="https://www.instagram.com/frasm__">www.instagram.com/frasm__</a></h4>
                     </div>
                 </div>
             

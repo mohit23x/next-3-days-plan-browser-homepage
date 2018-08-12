@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import { DisplayToday, DisplayTomorrow, DisplayDayAfterTomorrow } from './Components/Display';
 import { Header } from './Components/Header';
 import { SettingsPage } from './Components/SettingsPage';
 import SimpleSotrage from 'react-simple-storage';
-import './hack.css';
-import './style.css';
 
 
 class App extends React.Component{
@@ -137,7 +135,7 @@ class App extends React.Component{
         <span>{this.state.err}</span>
         <br/>
         <br/>
-        <div className="grid">
+        <div className="display_grid">
           <DisplayToday items={this.state.Today} deleteItem={this.deleteItem} />
           <DisplayTomorrow items={this.state.Tomorrow} deleteItem={this.deleteItem} />
           <DisplayDayAfterTomorrow items={this.state.Day_After_Tomorrow} deleteItem={this.deleteItem} />
@@ -153,7 +151,7 @@ class App extends React.Component{
         <span>{this.state.err}</span>
         <br/>
         <br/>
-        <div className="container">
+        <div>
           <SettingsPage hideSettingFunction={this.hideSettingFunction} presentName={this.state.username} setUserName={this.setUserName} />
         </div>
       </div>
@@ -180,10 +178,7 @@ class Textbox extends React.Component{
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
-    this.handleSelect = this.handleSelect.bind(this)
-
-    const rem40 = { 'width': '60rem' }; 
-     
+    this.handleSelect = this.handleSelect.bind(this)     
   }
 
 handleChange(e){
@@ -218,22 +213,24 @@ handleSelect(event){
 
   render(){
     return(
-      <div className="container">
+      <div className="textbox container">
       <form onSubmit={this.handleSubmit} className="form"> 
-      <fieldset className="form-group form-warning">
-        <label for="day">FOR DAY : </label>
+      <div className="form-group form-warning">
+      <center><label>FOR</label></center>
         <select value={this.state.day} id="day" onChange={this.handleSelect} className="form-control" >
             <option value="Today">Today</option>
             <option value="Tomorrow">Tomorrow</option>
             <option value="Day_After_Tomorrow">Day after Tomorrow</option>
           </select>
-      </fieldset>
-        <fieldset className="form-group form-warning">
-          <label>YOUR GOAL : </label>
-          <input type="text" id="aim" value={this.state.term} placeholder='type you aim here and press enter' onChange={this.handleChange} className="form-control" />
-        </fieldset>
-        <button className="btn btn-warning btn-ghost">I WILL DO THIS.</button>
-          <span>{this.state.err}</span>
+      </div>
+      <div className="form-group form-warning">
+          <center><label>YOUR GOAL</label></center>
+          <input type="text" id="aim" value={this.state.term} placeholder='type here and press enter' onChange={this.handleChange} className="form-control" />
+      </div>
+      <div className="form-group">
+        <button className="btn btn-warning btn-ghost" id="iwilldothis">I WILL DO THIS.</button>
+      </div>
+      <span>{this.state.err}</span>
       </form>
       </div>
     )
