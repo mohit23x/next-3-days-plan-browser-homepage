@@ -18,9 +18,11 @@ export class Header extends React.Component{
         var currentTime = new Date();
 
         setInterval( () => {
+            var currentTime = new Date();
+
             var hours = currentTime.getHours();
             var minutes = currentTime.getMinutes();
-            var outside = ''
+            var outside = '';
 
             if(hours < 5){
                 outside = ' GET SOME SLEEP!';
@@ -39,11 +41,12 @@ export class Header extends React.Component{
             if(minutes < 10){
                 minutes = "0" + minutes;
             }
+
             var v = hours + ":" + minutes ;
             this.setState({
                 'timeRightNow': v,
                 'bahar': outside
-            });    
+            });  
         }, 1000)
 
         var day = currentTime.getDate();
