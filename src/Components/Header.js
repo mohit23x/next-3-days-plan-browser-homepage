@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 export class Header extends React.Component{
     constructor(props){
@@ -15,9 +16,13 @@ export class Header extends React.Component{
     }
 
     componentDidMount(){
+
+        ReactDOM.findDOMNode(this.refs.searchInput).focus();
         var currentTime = new Date();
 
         setInterval( () => {
+
+
             var currentTime = new Date();
 
             var hours = currentTime.getHours();
@@ -101,7 +106,7 @@ export class Header extends React.Component{
                     <form onSubmit={()=> window.open(this.state.keyword, "_blank")}>
                     <div className="search">
                         <span><img src={require('./google50x50.png')} alt=""/></span>
-                        <input type="text" id="search" name="search" onChange={this.handleSearch} className="search_input" placeholder="search" />
+                        <input type="text" ref="searchInput" id="search" name="search" onChange={this.handleSearch} className="search_input" placeholder="search" ></input>
                     </div>
                     </form>
                 </div>
