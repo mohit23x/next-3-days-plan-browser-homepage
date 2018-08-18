@@ -1,4 +1,4 @@
-<img src="./docs/logo192.ico" align="right" height="152" width="142"/>
+
 <h1> :star2: Next Three Days Planner</h1>
 
 <p>A todo/planner website to make you productive and organised. 
