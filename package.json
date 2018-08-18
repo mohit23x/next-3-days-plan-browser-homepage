@@ -2,7 +2,7 @@
   "name": "todo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mohit0101.github.io/next-3-days-plan-browser-homepage",
+  "homepage": "https://mohit0101.github.io/next-3-days-plan-browser-homepage",
   "dependencies": {
     "hack": "^0.8.1",
     "ontime": "0.0.5",
