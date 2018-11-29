@@ -6,11 +6,11 @@
   "dependencies": {
     "hack": "^0.8.1",
     "ontime": "0.0.5",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4",
-    "react-simple-storage": "^1.2.2",
-    "url-parse": "^1.4.3"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "^2.1.1",
+    "react-simple-storage": "^1.4.0",
+    "url-parse": "^1.4.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,5 +22,11 @@
   },
   "devDependencies": {
     "gh-pages": "^1.2.0"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

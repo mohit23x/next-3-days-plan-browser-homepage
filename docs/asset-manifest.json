@@ -1,7 +1,14 @@
 {
-  "main.css": "static/css/main.5968d833.css",
-  "main.css.map": "static/css/main.5968d833.css.map",
-  "main.js": "static/js/main.f58dd71b.js",
-  "main.js.map": "static/js/main.f58dd71b.js.map",
-  "static\\media\\setting-png.png": "static/media/setting-png.33f0268b.png"
+  "main.css": "/next-3-days-plan-browser-homepage/static/css/main.89a97c12.chunk.css",
+  "main.js": "/next-3-days-plan-browser-homepage/static/js/main.6e8325cb.chunk.js",
+  "main.js.map": "/next-3-days-plan-browser-homepage/static/js/main.6e8325cb.chunk.js.map",
+  "static/js/1.9e861a10.chunk.js": "/next-3-days-plan-browser-homepage/static/js/1.9e861a10.chunk.js",
+  "static/js/1.9e861a10.chunk.js.map": "/next-3-days-plan-browser-homepage/static/js/1.9e861a10.chunk.js.map",
+  "runtime~main.js": "/next-3-days-plan-browser-homepage/static/js/runtime~main.7b4bccb0.js",
+  "runtime~main.js.map": "/next-3-days-plan-browser-homepage/static/js/runtime~main.7b4bccb0.js.map",
+  "static/media/setting-png.png": "/next-3-days-plan-browser-homepage/static/media/setting-png.33f0268b.png",
+  "static/css/main.89a97c12.chunk.css.map": "/next-3-days-plan-browser-homepage/static/css/main.89a97c12.chunk.css.map",
+  "index.html": "/next-3-days-plan-browser-homepage/index.html",
+  "precache-manifest.f0061480c7d46df61b5dc0f73bb4f616.js": "/next-3-days-plan-browser-homepage/precache-manifest.f0061480c7d46df61b5dc0f73bb4f616.js",
+  "service-worker.js": "/next-3-days-plan-browser-homepage/service-worker.js"
 }
