@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/next-3-days-plan-browser-homepage/precache-manifest.f0061480c7d46df61b5dc0f73bb4f616.js"
+  "/next-3-days-plan-browser-homepage/precache-manifest.e7d6291956fb0ef9aa5448be68a7912c.js"
 );
 
 workbox.clientsClaim();
