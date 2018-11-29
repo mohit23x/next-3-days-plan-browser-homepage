@@ -58,8 +58,8 @@ export class SettingsPage extends React.Component{
                     <div className="meker_info_content">
                         <h3>Mohit</h3>
                         <p>you can find him here -</p>
-                        <h4>Github - <a href="https://www.github.com/mohit23x">www.github.com/mohit0101</a></h4>
-                        <h4>instagram - <a href="https://www.instagram.com/mohit23x">www.instagram.com/frasm__</a></h4>
+                        <h4>Github - <a href="https://www.github.com/mohit23x">www.github.com/mohit23x</a></h4>
+                        <h4>instagram - <a href="https://www.instagram.com/mohit23x">www.instagram.com/mohit23x</a></h4>
                     </div>
                 </div>
             
